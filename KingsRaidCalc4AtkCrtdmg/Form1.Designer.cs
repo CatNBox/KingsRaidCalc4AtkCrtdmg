@@ -28,20 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.heroPicBox = new System.Windows.Forms.PictureBox();
+            this.heroNameComboBox = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.heroPicBox)).BeginInit();
             this.SuspendLayout();
+            // 
+            // heroPicBox
+            // 
+            this.heroPicBox.Location = new System.Drawing.Point(12, 13);
+            this.heroPicBox.Name = "heroPicBox";
+            this.heroPicBox.Size = new System.Drawing.Size(110, 110);
+            this.heroPicBox.TabIndex = 0;
+            this.heroPicBox.TabStop = false;
+            // 
+            // heroNameComboBox
+            // 
+            this.heroNameComboBox.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.heroNameComboBox.FormattingEnabled = true;
+            this.heroNameComboBox.Location = new System.Drawing.Point(128, 45);
+            this.heroNameComboBox.Name = "heroNameComboBox";
+            this.heroNameComboBox.Size = new System.Drawing.Size(140, 27);
+            this.heroNameComboBox.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(132, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 19);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "영웅 이름";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 441);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.heroNameComboBox);
+            this.Controls.Add(this.heroPicBox);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.heroPicBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox heroPicBox;
+        private System.Windows.Forms.ComboBox heroNameComboBox;
+        private System.Windows.Forms.Label label1;
     }
 }
 
